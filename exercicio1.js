@@ -1,3 +1,5 @@
+//Exercício 01
+
 function ex1()
 {
     //Exercício 1. Escreva um programa que faça a soma entre 2 números.
@@ -91,41 +93,42 @@ function ex8()
     alert(Number(f).toFixed(2) + "°F = " + c.toFixed(2) + "°C");
 }
 
-let numero = "0";
 
-do {
-    numero = prompt("Escolha o número do exercício:\n1 - Soma;\n2 - Olá!\n3 - Conversor de Dolar\n4 - Anterior e posterior de um número inteiro\n5 - Valor de terreno\n6 - Consumo de combustível\n7 - Média de notas\n8 - Conversão de temperaturas\n0 - Sair");
-    
-    switch (numero) {
-        case "1":
-            ex1();
-            break;
-        case "2":
-            ex2();
-            break;
-        case "3":
-            ex3();
-            break;
-        case "4":
-            ex4();
-            break;
-        case "5":
-            ex5();
-            break;
-        case "6":
-            ex6();
-            break;
-        case "7":
-            ex7();
-            break;
-        case "8":
-            ex8();
-            break;
-        case "0":
-            alert("Saindo...");
-            break;
-        default: 
-            alert("Opção inválida. Tente novamente.");
-            break;
-    }
-} while (numero != "0");
+    let numero = "0";
+
+    do {
+        numero = prompt("Escolha o número do exercício:\n1 - Soma;\n2 - Olá!\n3 - Conversor de Dolar\n4 - Anterior e posterior de um número inteiro\n5 - Valor de terreno\n6 - Consumo de combustível\n7 - Média de notas\n8 - Conversão de temperaturas\n0 - Sair");
+        
+        switch (numero) {
+            case "1":
+                ex1();
+                break;
+            case "2":
+                ex2();
+                break;
+            case "3":
+                ex3();
+                break;
+            case "4":
+                ex4();
+                break;
+            case "5":
+                ex5();
+                break;
+            case "6":
+                ex6();
+                break;
+            case "7":
+                ex7();
+                break;
+            case "8":
+                ex8();
+                break;
+            case "0":
+                alert("Saindo...");
+                break;
+            default: 
+                alert("Opção inválida. Tente novamente.");
+                break;
+        }
+    } while (numero != "0");
