@@ -1,14 +1,11 @@
-const prompt = require('prompt-sync')(); // se ainda não instalou, veja abaixo
-const { menu1 } = require('./exercicio1');
-
-const numero = prompt("Escolha o número do exercício:\n1 - Exercícios Básicos\n2 - Outro grupo de exercícios\n");
+let numero = prompt("Escolha o número do exercício:\n1 - Lista 1\n2 - Lista 2\n");
 
 switch (numero) {
     case "1":
-        menu1();
+        menu1(); // chama a função definida em exercicio1.js
         break;
     case "2":
-        console.log("Em desenvolvimento...");
+        menu2();
         break;
     default:
         console.log("Opção inválida");

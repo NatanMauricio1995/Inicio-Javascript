@@ -93,7 +93,8 @@ function ex8()
     alert(Number(f).toFixed(2) + "°F = " + c.toFixed(2) + "°C");
 }
 
-
+function menu1()
+{
     let numero = "0";
 
     do {
@@ -132,3 +133,4 @@ function ex8()
                 break;
         }
     } while (numero != "0");
+}
