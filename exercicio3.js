@@ -143,5 +143,154 @@ function ex4()
     alert("Fim do jogo!");
 }
 
+function ex5()
+{
+    //Crie um algoritmo que receba login e senha e verifique as credenciais. Caso algum deles estiver errado o programa deve retornar ao usuário quais das opções está errada, se é o login ou a senha. O programa deve bloquear o acesso após 3 tentativas erradas. Quando for a última tentativa ele deve emitir um alerta: "Última tentativa, mais um erro seu acesso será bloqueado!"
+    let loginReal = "natanmauriciosantos";
+    let senhaReal = "20091995";
+
+    function lerLogin()
+    {
+        let tentativaLogin = prompt("Digite o login:");
+        return tentativaLogin;
+    }
+
+    function lerSenha()
+    {
+        let tentativaSenha = prompt("Digite a senha:");
+        return tentativaSenha;
+    }
+
+    let i = 0;
+    let login;
+    let senha;
+    do
+    {
+        login = lerLogin();
+        senha = lerSenha();
+
+        if((login != loginReal) && (senha != senhaReal))
+            alert("Login e senha inválidos!");
+        else if((login == loginReal) && (senha != senhaReal))
+            alert("Senha inválida!");
+        else if((login != loginReal) && (senha == senhaReal))
+            alert("Login inválido!");
+        else
+            alert("Bem-vindo!");
+        i++;
+        if(i == 2)
+            alert("Última tentativa!");
+    }while(((login != loginReal) || (senha != senhaReal)) &&  (i < 3));
+
+    if( i == 3)
+            alert("Número máximo de tentativas excedido. Acesso bloqueado!");
+}
+
+function ex6e7()
+{
+    //Escreva um programa que seja capaz de desenhar uma pirâmide de asteriscos. O usuário deverá informar quantos andares ele deseja que a pirâmide tenha. Aproveitando o exercício anterior, escreva um programa que consiga construir um retângulo. O usuário deve informar a largura e a altura em asteriscos
+    function piramide()
+    {
+        let andar;
+        let i;
+        let j;
+        let k;
+        let espaco;
+        let piramide = "";
+        andar = prompt("Quantos andares terá a pirâmide?");
+        espaco = andar - 1;
+        for(i = 0; i < andar; i++)
+        {
+            for(j = 0; j < (espaco - i); j++)
+				piramide += " ";
+			for(k = 0; k < (i + 1); k++)
+            {
+                piramide += "* ";
+            }
+            piramide += "\n";
+        }
+
+        alert(piramide);
+    }
+
+    function retangulo()
+    {
+        let altura;
+        let largura;
+        let i; 
+        let j;
+        let retangulo = "";
+        altura = prompt("Digite a altura do retângulo:");
+        largura = prompt("Digite a largura do retângulo:");
+        for(i = 0; i < altura; i++)
+		{
+			for(j = 0; j < largura; j++)
+				retangulo += ("*   ");
+			retangulo += "\n";
+		}
+        alert(retangulo);
+    }
+    
+    function escolha()
+    {
+        let escolha = prompt("O que deseja:\n   1) Desenhar pirâmide\n   2) Desenhar retângulo\n   3) Parar");
+        return escolha;
+    }
+    
+    let x;
+    do
+    {
+        x = escolha();
+        switch(x)
+        {
+            case '1':
+                piramide();
+                break;
+            case '2':
+                retangulo();
+                break;
+            case '3':
+                alert("Até mais!");
+                break;
+            
+        }
+    }while((x != 3));
+}
+
+function menu3()
+{
+    let numero = "0";
+
+    do {
+        numero = prompt("Escolha o número do exercício:\n1 - Cronômetro;\n2 - Tabuada;\n3 - Pares\n4 - Adivinhação\n5 - Login e Senha\n6 - Pirâmide e Retangulo\n0 - Sair");
+        
+        switch (numero) {
+            case "1":
+                ex1();
+                break;
+            case "2":
+                ex2();
+                break;
+            case "3":
+                ex3();
+                break;
+            case "4":
+                ex4();
+                break;
+            case "5":
+                ex5();
+                break;
+            case "6":
+                ex6e7();
+                break;
+            case "0":
+                alert("Saindo...");
+                break;
+            default: 
+                alert("Opção inválida. Tente novamente.");
+                break;
+        }
+    } while (numero != "0");
+}
 
 

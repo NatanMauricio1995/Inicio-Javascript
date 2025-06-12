@@ -1,4 +1,4 @@
-let numero = prompt("Escolha o número do exercício:\n1 - Lista 1\n2 - Lista 2\n");
+let numero = prompt("Escolha o número do exercício:\n   1 - Lista 1\n   2 - Lista 2\n   3 - Lista 3");
 
 switch (numero) {
     case "1":
@@ -6,6 +6,9 @@ switch (numero) {
         break;
     case "2":
         menu2();
+        break;
+    case "3":
+        menu3();
         break;
     default:
         console.log("Opção inválida");
