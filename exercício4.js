@@ -176,9 +176,35 @@ function ex1()
     while (escolha !== '0');
 }
 
+function ex2()
+{
+    //Exercício 4: Escreva um código que irá percorrer uma lista de números inteiros lista[ ] = { 3, 5, 6, 7, 8, 10, 22, 55, 110 } e irá contar a quantidade de números pares presente nela.
+
+    let lista = [3, 5, 6, 7, 8, 10, 22, 55, 110];
+    let i, j;
+    j = 0;
+    for(i = 0; i < lista.length; i++)
+    {
+        if(lista[i] % 2 == 0)
+            j++;
+    }
+
+    alert("na lista {3, 5, 6, 7, 8, 10, 22, 55, 110} há " + j + " pares!");
+}
+
+function ex3()
+{
+    //Exercício 5: Escreva um programa que sirva como uma lista de compras de mercado. Você irá criar um menu que pergunte se o usuário quer inserir um item ou ver a lista.
+    //Exercício 6: Aproveite a questão anterior e adiciona a opção do usuário remover um item.
+    //Exercício 7: Aproveite o código que estamos utilizando e implemente um preço para cada item (Dica. Utilizem outra lista e use os mesmos índices para o item e para o preço).
+    //Exercício 8: Aproveite os códigos anteriores e implemente a função de impressão por ordem de preço (crescente)
+}
+
+
+
 function menu4()
 {
-    ex1();
+    ex3();
 }
 
  
