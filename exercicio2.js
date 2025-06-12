@@ -287,7 +287,7 @@ function menu2()
     let numero = "0";
 
     do {
-        numero = prompt("Escolha o número do exercício:\n1 - Par ou ímpar;\n2 - Maior ou menor;\n3 - Fila o banco\n4 - Boate\n5 - Senha\n6 - Quiz\n0 - Sair");
+        numero = prompt("Escolha o número do exercício:\n   1) Par ou ímpar;\n   2) Maior ou menor;\n   3) Fila o banco\n   4) Boate\n   5) Senha\n   6) Quiz\n 0) Sair");
         
         switch (numero) {
             case "1":

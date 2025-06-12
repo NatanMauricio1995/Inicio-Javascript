@@ -262,7 +262,7 @@ function menu3()
     let numero = "0";
 
     do {
-        numero = prompt("Escolha o número do exercício:\n1 - Cronômetro;\n2 - Tabuada;\n3 - Pares\n4 - Adivinhação\n5 - Login e Senha\n6 - Pirâmide e Retangulo\n0 - Sair");
+        numero = prompt("Escolha o número do exercício:\n   1) Cronômetro;\n   2) Tabuada;\n   3) Pares\n   4) Adivinhação\n   5) Login e Senha\n   6) Pirâmide e Retangulo\n   0) Sair");
         
         switch (numero) {
             case "1":

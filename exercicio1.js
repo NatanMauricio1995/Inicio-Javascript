@@ -98,7 +98,7 @@ function menu1()
     let numero = "0";
 
     do {
-        numero = prompt("Escolha o número do exercício:\n1 - Soma;\n2 - Olá!\n3 - Conversor de Dolar\n4 - Anterior e posterior de um número inteiro\n5 - Valor de terreno\n6 - Consumo de combustível\n7 - Média de notas\n8 - Conversão de temperaturas\n0 - Sair");
+        numero = prompt("Escolha o número do exercício:\n   1) Soma;\n   2) Olá!\n   3) Conversor de Dolar\n   4) Anterior e posterior de um número inteiro\n   5) Valor de terreno\n   6) Consumo de combustível\n   7) Média de notas\n   8) Conversão de temperaturas\n   0) Sair");
         
         switch (numero) {
             case "1":
